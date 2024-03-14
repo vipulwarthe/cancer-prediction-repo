@@ -17,11 +17,17 @@ https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv
 #First we Create instance with ubuntu AMI with t2.medium instance type with 30GB storage. 
 
 sudo apt-get update && sudo apt-get upgrade -y
+
 sudo apt install python3-venv -y
+
 python3 -m venv MLPRO
+
 source MLPRO/bin/activate                 (activate the environment)
+
 deactivate                                (to deactivate the envirnoment)
+
 mkdir mlproject                           (create one project directory)
+
 cd mlproject                              (changed to project directory also check the permission of folder)
 
 Create new repo in github and follow below steps:
