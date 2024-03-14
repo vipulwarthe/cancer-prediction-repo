@@ -17,38 +17,38 @@ https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv
 
 #First we Create instance with ubuntu AMI with t2.medium instance type with 30GB storage. 
 
-'''
-$   sudo apt-get update && sudo apt-get upgrade -y 
-'''
-2   sudo apt install python3-venv -y
 
-3   python3 -m venv MLPRO
+*   sudo apt-get update && sudo apt-get upgrade -y 
 
-4   source MLPRO/bin/activate                 (activate the environment)
+*   sudo apt install python3-venv -y
 
-5   deactivate                                (to deactivate the envirnoment)
+*   python3 -m venv MLPRO
 
-6   mkdir mlproject                           (create one project directory)
+*   source MLPRO/bin/activate                 (activate the environment)
 
-7   cd mlproject                              (changed to project directory also check the permission of folder)
+*   deactivate                                (to deactivate the envirnoment)
+
+*   mkdir mlproject                           (create one project directory)
+
+*   cd mlproject                              (changed to project directory also check the permission of folder)
 
 Create new repo in github and follow below steps:
 
-8   echo "# End-to-end-ML-Project" >> README.md
+*   echo "# End-to-end-ML-Project" >> README.md
 
-9   git add README.md
+*   git add README.md
 
-10  git commit -m "First Commit"
+*   git commit -m "First Commit"
 
-11  git status
+*   git status
 
-12  git branch -M main
+*   git branch -M main
 
-13  git branch
+*   git branch
 
-14  git remote add origin https://github.com/vipulwarthe/mlproject.git
+*   git remote add origin https://github.com/vipulwarthe/mlproject.git
 
-15  git push -u origin main
+*   git push -u origin main
 
 Create .gitignore file with python template in mlproject repo on github
 
@@ -57,21 +57,21 @@ Create .gitignore file with python template in mlproject repo on github
 create and add setup.py, requirements.txt, .ipynb notebook file, dataset file, app.py and Dockerfile in mlproject repo and after run all the files push into github repo.
 save the model in modle.pkl format in github repo
 
-17  pip install -r requirements.txt 
+*   pip install -r requirements.txt 
 
-18  git status
+*   git status
 
-19  git add .
+*   git add .
 
-20  git status
+*   git status
 
-21  git commit -m "setup file added"
+*   git commit -m "setup file added"
 
-22  git push -u origin main
+*   git push -u origin main
 
 after creating app.py file run with below command also push all the files in github repo as well.
 
-23  nohup python app.py & 
+*   nohup python app.py & 
 
 After run above command go to the browser and paste below link
 
