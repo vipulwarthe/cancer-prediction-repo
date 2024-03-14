@@ -85,11 +85,34 @@ Just replace the localhost with you public IP address and you will see the resul
 
 Deployment of Containerized Machine Learning Model Application on AWS Elastic Container Service(ECS)
 
-1) Building, Training and Testing Machine Leaning Model
+1) Building, Training and Testing Machine Leaning Model 
 2) Create Pickle file and save the model in pkl format
 3) Create Flask API app
 4) Docker Containerization - create Dockerfile for containerization of our app deployment
 5) Creating a Docker Image and push it to Amazon ECR
+
+First we need to install docker and AWS CLI in our server and configure the AWS resources with AWS configure
+
+Clone Repository from Git:
+-git clone https://github.com/vipulwarthe/cancer-prediction-repo
+
+Install AWS CLI:
+-sudo apt update
+-sudo apt install -y awscli
+
+Install Docker:
+-sudo apt install -y docker.io 
+
+IF WE GOT BELOW ERROR PLEASE FOLLOW BELOW STEP:
+
+Error: Cannot perform an interactive login from a non TTY device
+
+-sudo usermod -aG docker $USER
+-sudo chown $USER /var/run/docker.sock
+-sudo systemctl start docker
+-sudo systemctl enable docker
+
+
 *  Create a new repository Named "cancer-repository"
 *  open the view push commands tab for cancer-repository
 1) etrieve an authentication token and authenticate your Docker client to your registry.
