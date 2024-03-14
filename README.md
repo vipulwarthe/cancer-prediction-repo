@@ -10,19 +10,19 @@ https://srinipratapgiri.medium.com/deployment-of-containerized-machine-learning-
 
 Dataset links: 
 
-1) https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 
-2) https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv
+https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv
 
 #First we Create instance with ubuntu AMI with t2.medium instance type with 30GB storage. 
 
-1   sudo apt-get update && sudo apt-get upgrade -y
-2   sudo apt install python3-venv -y
-3   python3 -m venv MLPRO
-4   source MLPRO/bin/activate                 (activate the environment)
-5   deactivate                                (to deactivate the envirnoment)
-6   mkdir mlproject                           (create one project directory)
-7   cd mlproject                              (changed to project directory also check the permission of folder)
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt install python3-venv -y
+python3 -m venv MLPRO
+source MLPRO/bin/activate                 (activate the environment)
+deactivate                                (to deactivate the envirnoment)
+mkdir mlproject                           (create one project directory)
+cd mlproject                              (changed to project directory also check the permission of folder)
 
 Create new repo in github and follow below steps:
 
