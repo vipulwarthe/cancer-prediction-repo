@@ -92,4 +92,13 @@ Deployment of Containerized Machine Learning Model Application on AWS Elastic Co
 5) Creating a Docker Image and push it to Amazon ECR
 *  Create a new repository Named "cancer-repository"
 *  open the view push commands tab for cancer-repository
+1) etrieve an authentication token and authenticate your Docker client to your registry.
+Use the AWS CLI:
+* aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 705334715992.dkr.ecr.us-east-1.amazonaws.com
+2) Build your Docker image using the following command
+* docker build -t cancer-repository .
+3) tag your image so you can push the image to this repository
+* docker tag cancer-repository:latest 705334715992.dkr.ecr.us-east-1.amazonaws.com/cancer-repository:latest
+4) Run the following command to push this image to your newly created AWS repository
+* docker push 705334715992.dkr.ecr.us-east-1.amazonaws.com/cancer-repository:latest
    
