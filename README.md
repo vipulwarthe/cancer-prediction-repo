@@ -15,7 +15,9 @@ https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 
 https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv
 
-#First we Create instance with ubuntu AMI with t2.medium instance type with 30GB storage. 
+# First part of project:
+
+-First we Create instance with ubuntu AMI with t2.medium instance type with 30GB storage. 
 
 
 *   sudo apt-get update && sudo apt-get upgrade -y 
@@ -78,3 +80,16 @@ After run above command go to the browser and paste below link
 http://localhost:5000/predict?s1=-0.96666522&s2=0.32786912&s3=-0.93579507&s4=-0.91104225&s5=0.60962671&s6=0.36569592&s7=-0.10914833&s8=-0.62181482&s9=-0.63860111&s10=0.53651178&s11=-0.46379509&s12=0.5132434&s13=-0.45632075&s14=-0.59189989&s15=0.67370318&s16=1.26928541&s17=2.17185315&s18=1.12535098&s19=0.64821758&s20=1.09244461&s21=-0.96440581&s22=-0.08750638&s23=-0.94145109&s24=-0.84547739&s25=-0.07511418&s26=-0.01862761&s27=-0.10400188&s28=-0.47718048&s29=-0.5634723&s30=0.05526303
 
 Just replace the localhost with you public IP address and you will see the result
+
+# Second part of project:
+
+Deployment of Containerized Machine Learning Model Application on AWS Elastic Container Service(ECS)
+
+1) Building, Training and Testing Machine Leaning Model
+2) Create Pickle file and save the model in pkl format
+3) Create Flask API app
+4) Docker Containerization - create Dockerfile for containerization of our app deployment
+5) Creating a Docker Image and push it to Amazon ECR
+*  Create a new repository Named "cancer-repository"
+*  open the view push commands tab for cancer-repository
+   
