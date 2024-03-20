@@ -97,10 +97,13 @@ Clone Repository from Git:
 -git clone https://github.com/vipulwarthe/cancer-prediction-repo
 
 Install AWS CLI:
+
 -sudo apt update
+
 -sudo apt install -y awscli
 
 Install Docker:
+
 -sudo apt install -y docker.io 
 
 IF WE GOT BELOW ERROR PLEASE FOLLOW BELOW STEP:
@@ -108,20 +111,32 @@ IF WE GOT BELOW ERROR PLEASE FOLLOW BELOW STEP:
 Error: Cannot perform an interactive login from a non TTY device
 
 -sudo usermod -aG docker $USER
+
 -sudo chown $USER /var/run/docker.sock
+
 -sudo systemctl start docker
+
 -sudo systemctl enable docker
 
 
 *  Create a new repository Named "cancer-repository"
+  
 *  open the view push commands tab for cancer-repository
+  
 1) etrieve an authentication token and authenticate your Docker client to your registry.
 Use the AWS CLI:
+
 * aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 705334715992.dkr.ecr.us-east-1.amazonaws.com
+  
 2) Build your Docker image using the following command
+   
 * docker build -t cancer-repository .
+  
 3) tag your image so you can push the image to this repository
+   
 * docker tag cancer-repository:latest 705334715992.dkr.ecr.us-east-1.amazonaws.com/cancer-repository:latest
+  
 4) Run the following command to push this image to your newly created AWS repository
+   
 * docker push 705334715992.dkr.ecr.us-east-1.amazonaws.com/cancer-repository:latest
    
